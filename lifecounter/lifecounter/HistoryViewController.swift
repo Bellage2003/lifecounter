@@ -18,6 +18,11 @@ class HistoryViewController: UIViewController, UITableViewDataSource {
         //view.addSubview(tableView)
     }
     
+    @IBAction func backButtonTapped(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
