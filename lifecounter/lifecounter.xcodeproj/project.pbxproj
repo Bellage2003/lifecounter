@@ -16,6 +16,7 @@
 		2406ED752BCC7DC50088E2FA /* lifecounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2406ED742BCC7DC50088E2FA /* lifecounterTests.swift */; };
 		2406ED7F2BCC7DC50088E2FA /* lifecounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2406ED7E2BCC7DC50088E2FA /* lifecounterUITests.swift */; };
 		2406ED812BCC7DC50088E2FA /* lifecounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2406ED802BCC7DC50088E2FA /* lifecounterUITestsLaunchTests.swift */; };
+		246E11F22BD4E56800EA18E7 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246E11F12BD4E56800EA18E7 /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2406ED7A2BCC7DC50088E2FA /* lifecounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lifecounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2406ED7E2BCC7DC50088E2FA /* lifecounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifecounterUITests.swift; sourceTree = "<group>"; };
 		2406ED802BCC7DC50088E2FA /* lifecounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifecounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		246E11F12BD4E56800EA18E7 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				2406ED5D2BCC7DC20088E2FA /* AppDelegate.swift */,
 				2406ED5F2BCC7DC20088E2FA /* SceneDelegate.swift */,
 				2406ED612BCC7DC20088E2FA /* ViewController.swift */,
+				246E11F12BD4E56800EA18E7 /* HistoryViewController.swift */,
 				2406ED632BCC7DC20088E2FA /* Main.storyboard */,
 				2406ED662BCC7DC40088E2FA /* Assets.xcassets */,
 				2406ED682BCC7DC40088E2FA /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				2406ED622BCC7DC20088E2FA /* ViewController.swift in Sources */,
 				2406ED5E2BCC7DC20088E2FA /* AppDelegate.swift in Sources */,
 				2406ED602BCC7DC20088E2FA /* SceneDelegate.swift in Sources */,
+				246E11F22BD4E56800EA18E7 /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
