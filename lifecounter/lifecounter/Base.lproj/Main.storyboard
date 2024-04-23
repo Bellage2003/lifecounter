@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="HVz-JI-P4G" customClass="HistoryViewController" customModule="lifecounter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bzl-cU-a04">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAD-rP-i0P">
@@ -50,25 +50,33 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lifecounter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Kpt-KW-6yj">
-                                <rect key="frame" x="-279" y="240.66666666666663" width="951" height="371"/>
+                                <rect key="frame" x="-212" y="9.6666666666666572" width="1268" height="371"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nkh-AR-RJC">
-                                        <rect key="frame" x="0.0" y="0.0" width="317" height="371"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="nkh-AR-RJC">
+                                        <rect key="frame" x="0.0" y="0.0" width="422.66666666666669" height="371"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXK-Qx-gj7">
-                                                <rect key="frame" x="0.0" y="0.0" width="105.66666666666667" height="371"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="132.66666666666666" height="371"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Add Player"/>
                                                 <connections>
                                                     <action selector="addPlayerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VhE-3D-v4n"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5u-Ba-KQ5">
+                                                <rect key="frame" x="132.66666666666669" y="0.0" width="107" height="371"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Remove"/>
+                                                <connections>
+                                                    <action selector="removePlayerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b9R-zE-GGY"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ld-bG-cuF">
-                                                <rect key="frame" x="105.66666666666666" y="0.0" width="105.66666666666666" height="371"/>
+                                                <rect key="frame" x="239.66666666666666" y="0.0" width="98.666666666666657" height="371"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="History"/>
                                                 <connections>
@@ -77,7 +85,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGj-yY-XGu">
-                                                <rect key="frame" x="211.33333333333329" y="0.0" width="105.66666666666666" height="371"/>
+                                                <rect key="frame" x="338.33333333333331" y="0.0" width="84.333333333333314" height="371"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Reset"/>
                                                 <connections>
@@ -87,13 +95,13 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpe-1w-2FM">
-                                        <rect key="frame" x="317" y="0.0" width="317" height="371"/>
+                                        <rect key="frame" x="422.66666666666663" y="0.0" width="422.66666666666663" height="371"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krw-fI-rEE">
-                                        <rect key="frame" x="634" y="0.0" width="317" height="371"/>
+                                        <rect key="frame" x="845.33333333333337" y="0.0" width="422.66666666666663" height="371"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="OK"/>
                                         <connections>
@@ -115,6 +123,7 @@
                         <outlet property="historyButton" destination="4Ld-bG-cuF" id="mAr-Gl-g5W"/>
                         <outlet property="okButton" destination="krw-fI-rEE" id="n3e-7C-0ZH"/>
                         <outlet property="parentStackView" destination="Kpt-KW-6yj" id="xuA-Xj-T0f"/>
+                        <outlet property="removePlayerButton" destination="m5u-Ba-KQ5" id="2dK-6t-TE3"/>
                         <outlet property="resetButton" destination="uGj-yY-XGu" id="tsD-Vh-xx9"/>
                         <outlet property="statusLabel" destination="Mpe-1w-2FM" id="7bP-4w-Oel"/>
                     </connections>

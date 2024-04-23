@@ -19,6 +19,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var resetButton: UIButton!
     @IBOutlet weak var historyButton: UIButton!
     @IBOutlet weak var okButton: UIButton!
+    @IBOutlet weak var removePlayerButton: UIButton!
     
     var players: [Player] = []
     var gameStarted = false
@@ -26,11 +27,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        for playerNumber in 1...2 {
+        for playerNumber in 1...4 {
             addPlayer(playerNumber: playerNumber)
         }
         statusLabel.isHidden = true
         okButton.isHidden = true
+        updateRemovePlayerButtonState()
         setupTextFields()
     }
     
@@ -114,6 +116,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         parentStackView.addArrangedSubview(playerStackView)
         players.append(Player(lifeTotal: 20, lifeLabel: playerLabel))
+        updateRemovePlayerButtonState()
     }
     
     
@@ -187,6 +190,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 subtractTextField.text = ""
             }
         }
+    }
+    
+    @IBAction func removePlayerButtonTapped(_ sender: UIButton) {
+        guard players.count > 2 else { return }
+        let playerToRemove = players.removeLast()
+        if let playerStackView = playerToRemove.lifeLabel.superview as? UIStackView {
+            playerStackView.removeFromSuperview()
+        }
+        updateRemovePlayerButtonState()
+    }
+    
+    func updateRemovePlayerButtonState() {
+        removePlayerButton.isEnabled = players.count > 2
     }
     
     override func viewWillLayoutSubviews() {
